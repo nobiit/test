@@ -1,0 +1,44 @@
+{
+  "name": "@nobidev/test",
+  "version": "1.0.0",
+  "description": "Project Test",
+  "main": "dist/main.js",
+  "license": "MIT",
+  "author": {
+    "name": "Nobi",
+    "email": "nobi@nobidev.com"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "node": "ts-node -r tsconfig-paths/register",
+    "migrate": "yarn run node src/migrate",
+    "start": "yarn run node ."
+  },
+  "engines": {
+    "node": "== 14.7",
+    "yarn": "== 1.22"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "axios": "^0.21.0",
+    "chalk": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "fs-extra": "^9.0.1",
+    "lodash": "^4.17.20",
+    "lodash-decorators": "^6.0.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.6.3",
+    "ts-essentials": "^7.0.1",
+    "utility-types": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.4",
+    "@types/lodash": "^4.14.165",
+    "@types/node": "^14.14.7",
+    "ts-node": "^9.0.0",
+    "tsc-watch": "^4.2.9",
+    "tsconfig-paths": "^3.9.0",
+    "tslib": "^2.0.3",
+    "typescript": "^4.0.5"
+  }
+}
