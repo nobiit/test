@@ -37,17 +37,17 @@
     /* Concatenate and emit output to single file. */
     // "outFile": "dist/main",
     /* Redirect output structure to the directory. */
-    "outDir": "dist",
+    // "outDir": "dist",
     /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     "rootDir": "src",
     /* Enable project compilation */
     "composite": true,
     /* Specify file to store incremental compilation information */
-    "tsBuildInfoFile": "dist/ts.build.json",
+    // "tsBuildInfoFile": "dist/ts.build.json",
     /* Do not emit comments to output. */
     "removeComments": true,
     /* Do not emit outputs. */
-    "noEmit": false,
+    "noEmit": true,
     /* Import emit helpers from 'tslib'. */
     "importHelpers": true,
     /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
@@ -88,24 +88,24 @@
     /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     "paths": {
       "@/*": [
-        "src/*",
-        "dist/*"
+        "src/*"
+        // "dist/*"
       ],
       "@bases": [
-        "src/bases/index",
-        "dist/bases/index"
+        "src/bases/index"
+        // "dist/bases/index"
       ],
       "@helpers": [
-        "src/helpers/index",
-        "dist/helpers/index"
+        "src/helpers/index"
+        // "dist/helpers/index"
       ],
       "@types": [
-        "src/types/index",
-        "dist/types/index"
+        "src/types/index"
+        // "dist/types/index"
       ],
       "@schemas": [
-        "src/schemas/index",
-        "dist/schemas/index"
+        "src/schemas/index"
+        // "dist/schemas/index"
       ]
     },
     /* List of root folders whose combined content represents the structure of the project at runtime. */

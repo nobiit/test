@@ -2,7 +2,7 @@
   "name": "@nobidev/test",
   "version": "1.0.0",
   "description": "Project Test",
-  "main": "dist/main.js",
+  "main": "src/main",
   "license": "MIT",
   "author": {
     "name": "Nobi",
